@@ -95,10 +95,10 @@ section { padding-block: 88px; }
 .hero h1 em { color: var(--gold); font-weight: 500; }
 .hero .lede { font-size: 20px; color: var(--muted); max-width: 520px; }
 .hero .cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
-.proof { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); }
-.proof div { display: flex; flex-direction: column; }
-.proof strong { font-family: var(--display); font-size: 28px; color: var(--gold); font-weight: 600; line-height: 1.1; }
-.proof span { font-size: 14px; color: var(--muted); }
+.proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); max-width: 520px; }
+.proof div { display: flex; flex-direction: column; gap: 2px; }
+.proof strong { font-family: var(--display); font-size: 30px; color: var(--gold); font-weight: 600; line-height: 1.1; }
+.proof span { font-size: 14px; color: var(--muted); line-height: 1.35; }
 .hero-photo { position: relative; }
 .hero-photo img {
   width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 18%;
@@ -216,6 +216,9 @@ footer .brand { font-size: 20px; }
   .nav a.link { display: none; }
   .hero { padding-block: 36px 64px; }
   .hero .lede { font-size: 18px; }
+  .proof strong { font-size: 26px; }
+  .proof span { font-size: 13px; }
+  .hero .cta .btn { flex: 1 1 100%; }
   .site-header .btn { display: none; }
   body { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
   .mobile-bar {
