@@ -4,7 +4,7 @@ Static one-page site. No build step: open `index.html`, or run `python3 -m http.
 
 - Booking link: search `book.squareup.com` in `index.html` (3 buttons).
 - Photos: `assets/`. Swap files in place, keep the names.
-- Before launch: replace `YOUR-DOMAIN.com` in the `og:image` tag.
+- If you add a custom domain, update `og:url` and `og:image` in `index.html`.
 
 ## Deploy (Cloudflare Pages)
 1. Push this folder to a GitHub repo.
